@@ -1,4 +1,4 @@
-package tests.users;
+package tests.api.users;
 
 import com.intuit.karate.junit5.Karate;
 

@@ -13,7 +13,7 @@ class PerfTest extends Simulation {
 //  protocol.nameResolver = (req, ctx) => req.getHeader("karate-name")
 //  protocol.runner.karateEnv("perf")
 
-  val create = scenario("create and delete article").exec(karateFeature("classpath:performance/data/createArticle.feature"))
+  val create = scenario("create and delete article").exec(karateFeature("classpath:tests/performance/createArticle.feature"))
 
   setUp(
     create.inject(
